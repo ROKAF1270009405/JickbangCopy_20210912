@@ -13,6 +13,9 @@ class RoomData(
 
     fun getFormattedFloor() : String {
 
+//        양수 층 : "? 층"
+//        0층 : "반지하"
+//        음수 층 : "지하 -?층:" => 부호 반대
 
         if (this.floor > 0) {
 
