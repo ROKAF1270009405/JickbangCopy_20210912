@@ -1,6 +1,7 @@
 package com.neppplus.jickbangcopy_20210912.datas
 
 import android.R
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.*
 
@@ -8,7 +9,7 @@ class RoomData(
     val price: Int,
     val address: String,
     val floor: Int,
-    val description: String) {
+    val description: String) : Serializable {
 
     fun getFormattedFloor() : String {
 

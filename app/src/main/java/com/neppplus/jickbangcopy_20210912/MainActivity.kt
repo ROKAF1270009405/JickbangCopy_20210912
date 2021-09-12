@@ -1,5 +1,6 @@
 package com.neppplus.jickbangcopy_20210912
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.neppplus.jickbangcopy_20210912.adapters.RoomAdapter
@@ -28,8 +29,17 @@ class MainActivity : AppCompatActivity() {
         mRoomList.add(  RoomData(28000, "서울시 송파", 1,"10번째 방입니다.")  )
 
         mRoomAdapter = RoomAdapter(this, R.layout.activity_jickbang_list_item,mRoomList)
-
         jickbangListView.adapter = mRoomAdapter
+
+        jickbangListView.setOnItemClickListener { adapterView, view, position, l ->
+
+            val clickedRoom = mRoomList[position]
+
+            val myIntent = Intent(this, ViewRoomDetailActivity::class.java)
+            myIntent.putExtra("roomData", clickedRoom)
+            startActivity(myIntent)
+
+        }
 
     }
 }
