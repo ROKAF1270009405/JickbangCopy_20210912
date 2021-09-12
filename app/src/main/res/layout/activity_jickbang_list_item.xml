@@ -11,39 +11,45 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:padding="10dp">
+        >
 
         <ImageView
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="100dp"
-            android:src="@drawable/andorid"/>
+            android:src="@drawable/andorid"
+            android:scaleType="centerCrop"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="가격자리"
-            android:textSize="25dp"
+            android:text="가격 자리"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#FFD400"
+            android:textColor="#FEA409"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="주소자리"
-            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="동네, 층수 자리"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
             android:textStyle="bold"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="설명자리"
+            android:text="설명 자리"
             android:textSize="15dp"
+            android:layout_marginTop="2dp"
             android:textColor="#808080"
             />
 
