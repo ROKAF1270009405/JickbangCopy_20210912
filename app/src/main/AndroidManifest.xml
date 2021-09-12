@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JickbangCopy_20210912">
         <activity
+            android:name=".ViewRoomDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.login.ViewRoomDetailActivity"
+            android:exported="true"
+            android:label="@string/title_activity_view_room_detail" />
+        <activity
             android:name=".jickbang_list_item"
             android:exported="true" />
         <activity
